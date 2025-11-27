@@ -1,28 +1,42 @@
 <template>
-  <footer class="w-full bg-pink-100 pt-12 pb-8 px-6 md:px-12">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <div>
-        <h3 class="text-xl font-bold text-gray-900 mb-4">Ruby Cake & Bakery</h3>
-        <p class="text-sm text-gray-700 mb-2 max-w-xs leading-relaxed">
-          Jl. Bangun Mulyo, Waru, Kec. Waru, Kabupaten Penajam Paser Utara, Kalimantan Timur 76284
-        </p>
-        
-        <div class="mt-8 text-xs text-gray-500">
-          <p>2025 Ruby Cake and Bakery. All rights reserved</p>
+  <footer class="bg-brand-pink border-t border-brand-rose/40 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="col-span-1 md:col-span-2">
+          <div class="flex items-center gap-2 mb-6">
+            <i data-lucide="cake-slice" class="text-brand-dark w-8 h-8"></i>
+            <span class="text-2xl font-bold text-brand-dark">RUBY <span class="text-brand-gold italic">Bakery</span></span>
+          </div>
+          <p class="text-gray-600 mb-6 leading-relaxed pr-4">
+            Jl. Bangun Mulyo, Waru, Kec. Waru<br>Kabupaten Penajam Paser Utara<br>Kalimantan Timur 76284
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-brand-dark text-lg mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><router-link to="/" class="text-gray-600 hover:text-brand-gold">Home</router-link></li>
+            <li><router-link to="/products" class="text-gray-600 hover:text-brand-gold">Product</router-link></li>
+            <li><router-link to="/about" class="text-gray-600 hover:text-brand-gold">About Us</router-link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-brand-dark text-lg mb-6">Hours</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex justify-between"><span>Mon - Fri:</span> <span class="font-medium">08:00 - 21:00</span></li>
+            <li class="flex justify-between"><span>Sat - Sun:</span> <span class="font-medium">09:00 - 22:00</span></li>
+          </ul>
         </div>
       </div>
-
-      <div class="flex flex-col md:items-end">
-        <h4 class="font-bold text-gray-900 mb-4">Links</h4>
-        <ul class="flex gap-4 text-sm font-medium text-gray-800">
-          <li><a href="#" class="hover:text-purple-700 transition">Home</a></li>
-          <li><a href="#" class="hover:text-purple-700 transition">Product</a></li>
-          <li><a href="#" class="hover:text-purple-700 transition">About</a></li>
-          <li><a href="#" class="hover:text-purple-700 transition">Contact</a></li>
-        </ul>
+      <div class="border-t border-brand-dark/10 pt-8 text-center text-sm text-gray-500">
+        © 2025 Ruby Cake and Bakery.
       </div>
-
     </div>
   </footer>
 </template>
+
+<script setup>
+import { onMounted } from 'vue';
+onMounted(() => { if (window.lucide) window.lucide.createIcons(); });
+</script>

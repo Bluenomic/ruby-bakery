@@ -1,6 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
-import HomePage from "@/Pages/HomePage.vue";
-import Contact from "@/components/Contact.vue";
+import HomePage from "@/pages/HomePage.vue";
 
 const routes = [
     {
@@ -8,16 +7,14 @@ const routes = [
         name: "Home",
         component: HomePage,
     }
-    , {
-        path: "/contact",
-        name: "Contact",
-        component: Contact,
-    }
 ];
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    scrollBehavior() {
+        return { top: 0 };
+    }
 });
 
 export default router;

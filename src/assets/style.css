@@ -1,1 +1,24 @@
-@import "tailwindcss";
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FFF0F3;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.page-enter-active, .page-leave-active {
+    transition: opacity 0.3s ease;
+}
+.page-enter-from, .page-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+.fade-enter-from, .fade-leave-to {
+    opacity: 0;
+}
