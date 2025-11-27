@@ -1,17 +1,17 @@
 <template>
-  <section class="py-20 bg-brand-pink overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-brand-dark text-center mb-12">Loved by Our Clients</h2>
+  <section class="py-24 bg-brand-pink overflow-hidden">
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-12">
+      <h2 class="text-4xl md:text-5xl font-bold text-brand-dark text-center mb-16">Loved by Our Clients</h2>
       
-      <div class="relative max-w-4xl mx-auto">
-        <button @click="prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-12 z-20 bg-white hover:bg-brand-gold hover:text-white text-brand-dark p-3 rounded-full shadow-lg transition focus:outline-none">
-          <i data-lucide="chevron-left" class="w-6 h-6"></i>
+      <div class="relative max-w-5xl mx-auto">
+        <button @click="prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 z-20 bg-white hover:bg-brand-gold hover:text-white text-brand-dark p-4 rounded-full shadow-xl transition focus:outline-none">
+          <i data-lucide="chevron-left" class="w-8 h-8"></i>
         </button>
-        <button @click="next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-12 z-20 bg-white hover:bg-brand-gold hover:text-white text-brand-dark p-3 rounded-full shadow-lg transition focus:outline-none">
-          <i data-lucide="chevron-right" class="w-6 h-6"></i>
+        <button @click="next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-16 z-20 bg-white hover:bg-brand-gold hover:text-white text-brand-dark p-4 rounded-full shadow-xl transition focus:outline-none">
+          <i data-lucide="chevron-right" class="w-8 h-8"></i>
         </button>
 
-        <div class="relative h-[400px] md:h-[350px]">
+        <div class="relative h-[450px] md:h-[400px]">
           <transition-group name="fade">
             <div 
               v-for="(client, index) in clients" 
@@ -19,21 +19,21 @@
               v-show="currentSlide === index"
               class="absolute inset-0 flex flex-col items-center justify-center"
             >
-              <div class="bg-white rounded-3xl p-8 md:p-10 shadow-xl text-center max-w-2xl mx-auto relative">
-                <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-brand-gold text-white p-3 rounded-full shadow-md">
-                  <i data-lucide="quote" class="w-6 h-6"></i>
+              <div class="bg-white rounded-[3rem] p-10 md:p-14 shadow-2xl text-center max-w-3xl mx-auto relative">
+                <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-brand-gold text-white p-4 rounded-full shadow-lg">
+                  <i data-lucide="quote" class="w-8 h-8"></i>
                 </div>
 
-                <div class="mt-6 mb-6">
-                  <p class="text-lg md:text-xl text-gray-600 italic leading-relaxed">"{{ client.quote }}"</p>
+                <div class="mt-8 mb-8">
+                  <p class="text-xl md:text-2xl text-gray-600 italic leading-relaxed">"{{ client.quote }}"</p>
                 </div>
                 
                 <div class="flex flex-col items-center">
-                  <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-brand-gold mb-3">
+                  <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-brand-gold mb-4">
                     <img :src="client.image" :alt="client.name" class="w-full h-full object-cover">
                   </div>
-                  <h4 class="font-bold text-brand-dark text-lg">{{ client.name }}</h4>
-                  <p class="text-sm text-gray-500 uppercase tracking-wider">{{ client.role }}</p>
+                  <h4 class="font-bold text-brand-dark text-xl">{{ client.name }}</h4>
+                  <p class="text-base text-gray-500 uppercase tracking-wider font-bold">{{ client.role }}</p>
                 </div>
               </div>
             </div>

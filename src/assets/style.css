@@ -1,24 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #FFF0F3;
+  --color-brand-rose: #FFCCD5;
+  --color-brand-dark: #8E1F40;
+  --color-brand-gold: #C59D5F;
+  --color-brand-goldHover: #A68248;
+  --color-brand-gray: #F8F5F2;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "DM Sans", sans-serif;
+}
+
 body {
-    font-family: 'DM Sans', sans-serif;
-    background-color: #FFF0F3;
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-pink);
     margin: 0;
     padding: 0;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-serif);
 }
 
-.page-enter-active, .page-leave-active {
-    transition: opacity 0.3s ease;
-}
-.page-enter-from, .page-leave-to {
-    opacity: 0;
-}
-
-.fade-enter-active, .fade-leave-active {
-    transition: opacity 0.5s ease;
-}
-.fade-enter-from, .fade-leave-to {
-    opacity: 0;
-}
+.page-enter-active, .page-leave-active { transition: opacity 0.3s ease; }
+.page-enter-from, .page-leave-to { opacity: 0; }
+.fade-enter-active, .fade-leave-active { transition: opacity 0.5s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
