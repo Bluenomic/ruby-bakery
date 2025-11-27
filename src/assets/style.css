@@ -14,13 +14,17 @@
 
 body {
     font-family: var(--font-sans);
-    background-color: var(--color-brand-pink);
+    background-color: var(--color-brand-gray);
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .font-serif {
     font-family: var(--font-serif);
+}
+
+.font-sans {
+    font-family: var(--font-sans);
 }
 
 .page-enter-active, .page-leave-active { transition: opacity 0.3s ease; }

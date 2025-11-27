@@ -1,7 +1,7 @@
 <template>
   <section class="py-24 bg-brand-pink overflow-hidden">
     <div class="w-full mx-auto px-4 sm:px-6 lg:px-12">
-      <h2 class="text-4xl md:text-5xl font-bold text-brand-dark text-center mb-16">Loved by Our Clients</h2>
+      <h2 class="text-4xl md:text-5xl font-bold text-brand-dark text-center mb-16">Pelanggan Kami</h2>
       
       <div class="relative max-w-5xl mx-auto">
         <button @click="prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 z-20 bg-white hover:bg-brand-gold hover:text-white text-brand-dark p-4 rounded-full shadow-xl transition focus:outline-none">
@@ -46,12 +46,15 @@
 
 <script setup>
 import { ref, onMounted, onUpdated } from 'vue';
+import faiz from '@/assets/HomePage/clients/faiz.jpg';
+import yunus from '@/assets/HomePage/clients/yunus.jpg';
+import jetro from '@/assets/HomePage/clients/jetro.jpg';
 
 const currentSlide = ref(0);
 const clients = [
-  { id: 1, name: "Sandiaga Salahuddin Uno", role: "Public Figure", quote: "Kue Ruby adalah bintang yang menarik perhatian. Rasanya otentik.", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" },
-  { id: 2, name: "Basuki Hadimuljono", role: "Public Figure", quote: "Mitra yang andal serta konsisten dalam menjaga kualitas rasa.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" },
-  { id: 3, name: "Selvi Ananda", role: "Client", quote: "Mewujudkan kue impian dengan sempurna. Sangat rapi.", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" }
+  { id: 1, name: "Faiz", role: "Mahasiswa", quote: "Kue Ruby adalah bintang yang menarik perhatian. Rasanya otentik.", image: faiz },
+  { id: 2, name: "Yunus", role: "Mahasiswa", quote: "Mitra yang andal serta konsisten dalam menjaga kualitas rasa.", image: yunus },
+  { id: 3, name: "Jetro", role: "Mahasiswa", quote: "Mewujudkan kue impian dengan sempurna. Sangat rapi.", image: jetro }
 ];
 
 const next = () => {

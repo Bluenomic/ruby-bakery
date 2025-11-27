@@ -4,14 +4,14 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold text-brand-dark mb-4">Our Products</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-brand-dark mb-4">Produk Kami</h2>
         <div class="w-32 h-1.5 bg-brand-gold mx-auto mb-6 rounded-full"></div>
-        <p class="text-gray-600 text-xl">Made with the care that you deserve. We use only the finest ingredients.</p>
+        <p class="text-gray-600 text-xl">Dibuat dengan perhatian yang Anda layak dapatkan.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
         <router-link to="/products" v-for="(product, index) in products" :key="index" class="group cursor-pointer block">
-          <div class="relative overflow-hidden rounded-3xl shadow-lg aspect-[4/5] mb-6">
+          <div class="relative overflow-hidden rounded-3xl shadow-lg aspect-4/5 mb-6">
             <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all z-10"></div>
             <img :src="product.image" :alt="product.title" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
             <div class="absolute bottom-6 right-6 bg-white p-4 rounded-full shadow-xl z-20 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 text-brand-gold">
@@ -25,7 +25,7 @@
       
       <div class="text-center mt-16">
         <router-link to="/products" class="inline-flex items-center gap-3 text-brand-dark font-bold hover:text-brand-gold transition border-b-2 border-brand-dark hover:border-brand-gold pb-1 text-lg">
-          View All Menu <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          Lihat Semua Menu <i data-lucide="arrow-right" class="w-5 h-5"></i>
         </router-link>
       </div>
     </div>
@@ -34,11 +34,14 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import bread from '@/assets/HomePage/BreadCollage.jpg';
+import cake from '@/assets/HomePage/CakesCollage.png';
+import desserts from '@/assets/HomePage/DessertsCollage.jpg';
 
 const products = [
-  { title: 'Artisan Bread', desc: 'Sourdough, Baguette, and Soft Buns.', image: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600&auto=format&fit=crop' },
-  { title: 'Custom Cakes', desc: 'Birthday, Wedding, and Celebration cakes.', image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop' },
-  { title: 'Sweet Desserts', desc: 'Tarts, Puddings, and Traditional Kue.', image: 'https://images.unsplash.com/photo-1488477181946-6428a029177b?q=80&w=600&auto=format&fit=crop' },
+  { title: 'Roti', desc: 'Roti Cokelat, Keju, Strawberry, dll.', image: bread },
+  { title: 'Kue', desc: 'Kue Ulang Tahun, Pernikahan, dan Perayaan.', image: cake },
+  { title: 'Makanan Manis', desc: 'Kue Sus, Pie Buah, dll.', image: desserts },
 ];
 
 onMounted(() => {

@@ -6,9 +6,9 @@
         <div class="col-span-1 md:col-span-2">
           <div class="flex items-center gap-4 mb-8">
             <div class="bg-brand-pink p-3 rounded-xl">
-                <i data-lucide="cake-slice" class="text-brand-dark w-8 h-8"></i>
+                <img src="@/assets/Logo Ruby.png" alt="Logo" class="w-10 h-10 object-contain">
             </div>
-            <span class="text-3xl font-bold text-brand-dark font-serif">RUBY <span class="text-brand-gold italic">Bakery</span></span>
+            <span class="text-3xl font-bold text-brand-dark font-serif">RUBY <span class="text-brand-gold italic">Cake & Bakery</span></span>
           </div>
           <p class="text-gray-500 mb-8 leading-relaxed max-w-lg text-base">
             Menghadirkan kehangatan dan rasa manis di setiap gigitan. Kami bangga menyajikan roti dan kue berkualitas premium untuk momen spesial Anda.
@@ -29,10 +29,10 @@
         <div>
           <h3 class="font-bold text-brand-dark text-xl mb-8 font-serif">Quick Links</h3>
           <ul class="space-y-4 text-base">
-            <li><router-link to="/" class="text-gray-500 hover:text-brand-gold transition-colors">Home</router-link></li>
-            <li><router-link to="/products" class="text-gray-500 hover:text-brand-gold transition-colors">Our Menu</router-link></li>
-            <li><router-link to="/about" class="text-gray-500 hover:text-brand-gold transition-colors">About Us</router-link></li>
-            <li><router-link to="/contact" class="text-gray-500 hover:text-brand-gold transition-colors">Contact</router-link></li>
+            <li><router-link to="/" class="text-gray-500 hover:text-brand-gold transition-colors">Beranda</router-link></li>
+            <li><router-link to="/products" class="text-gray-500 hover:text-brand-gold transition-colors">Produk</router-link></li>
+            <li><router-link to="/about" class="text-gray-500 hover:text-brand-gold transition-colors">Tentang</router-link></li>
+            <li><router-link to="/contact" class="text-gray-500 hover:text-brand-gold transition-colors">Hubungi Kami</router-link></li>
           </ul>
         </div>
 
@@ -45,7 +45,7 @@
             </li>
             <li class="flex items-center gap-4">
                 <i data-lucide="clock" class="w-5 h-5 text-brand-gold shrink-0"></i>
-                <span>Buka Setiap Hari: 08:00 - 22:00</span>
+                <span>Buka Setiap Hari:<br>09:00 - 21:00 WITA</span>
             </li>
             <li class="flex items-center gap-4">
                 <i data-lucide="phone" class="w-5 h-5 text-brand-gold shrink-0"></i>
