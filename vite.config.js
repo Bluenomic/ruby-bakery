@@ -7,7 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/ruby-bakery/', 
+  base: 'ruby-bakery', 
   plugins: [
     vue(),
     vueDevTools(),
