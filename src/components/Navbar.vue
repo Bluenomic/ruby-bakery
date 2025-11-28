@@ -1,13 +1,15 @@
 <template>
   <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm transition-all duration-300">
     <div class="w-full mx-auto px-4 sm:px-6 lg:px-12">
-      <div class="flex items-center justify-between h-24">
+      <div class="flex items-center justify-between h-20 md:h-24">
         
-        <router-link to="/" class="shrink-0 flex items-center gap-3 cursor-pointer group mr-8">
-          <div class="bg-brand-pink p-2 rounded-full group-hover:rotate-12 transition duration-300">
-            <img src="@/assets/Logo Ruby.png" alt="Logo" class="w-10 h-10 object-contain">
+        <router-link to="/" class="shrink-0 flex items-center gap-2 md:gap-3 cursor-pointer group mr-2 md:mr-8 overflow-hidden">
+          <div class="bg-brand-pink p-1.5 md:p-2 rounded-full group-hover:rotate-12 transition duration-300 shrink-0">
+            <img src="@/assets/Logo Ruby.png" alt="Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain">
           </div>
-          <span class="text-2xl font-bold text-brand-dark tracking-tight font-serif">RUBY <span class="text-brand-gold italic">Cake & Bakery</span></span>
+          <span class="text-lg md:text-2xl font-bold text-brand-dark tracking-tight font-serif whitespace-nowrap truncate">
+            RUBY <span class="text-brand-gold italic">Cake & Bakery</span>
+          </span>
         </router-link>
 
         <div class="desktop-menu items-center gap-8 ml-auto">
@@ -26,7 +28,7 @@
 
         <div class="mobile-menu-btn ml-auto">
           <button @click="isOpen = !isOpen" class="text-brand-dark p-2 focus:outline-none active:bg-brand-pink/20 rounded-lg transition cursor-pointer">
-            <i :data-lucide="isOpen ? 'x' : 'menu'" class="w-8 h-8"></i>
+            <i :data-lucide="isOpen ? 'x' : 'menu'" class="w-7 h-7 md:w-8 md:h-8"></i>
           </button>
         </div>
 

@@ -1,13 +1,13 @@
 <template>
-  <section class="py-12 px-4 bg-brand-gray min-h-screen">
+  <section class="py-8 md:py-12 px-3 md:px-4 bg-brand-gray min-h-screen">
     <div class="max-w-7xl mx-auto">
       
-      <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-16">
+      <div class="flex flex-wrap justify-center gap-2 md:gap-8 mb-8 md:mb-16">
         <button 
           v-for="category in categories" 
           :key="category.id"
           @click="activeCategory = category.id"
-          class="px-8 py-3 rounded-lg font-bold tracking-widest uppercase transition-all duration-300 transform hover:-translate-y-1 shadow-md cursor-pointer"
+          class="px-4 py-2 md:px-8 md:py-3 rounded-lg font-bold tracking-widest uppercase transition-all duration-300 transform hover:-translate-y-1 shadow-md cursor-pointer text-xs md:text-base"
           :class="activeCategory === category.id 
             ? 'bg-brand-gold text-white shadow-brand-gold/50 scale-105' 
             : 'bg-brand-gold/60 text-white hover:bg-brand-gold'"
@@ -19,33 +19,36 @@
       <transition-group 
         tag="div" 
         name="fade" 
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 relative"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-8 relative"
       >
         <router-link 
           v-for="product in filteredProducts" 
           :key="product.id"
           :to="'/products/' + product.id"
-          class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 w-full block"
+          class="bg-white p-2 md:p-4 rounded-xl md:rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 w-full block"
         >
-          <div class="relative aspect-square overflow-hidden rounded-xl mb-4 bg-gray-100">
+          <div class="relative aspect-square overflow-hidden rounded-lg md:rounded-xl mb-2 md:mb-4 bg-gray-100">
             <img 
               :src="product.image" 
               :alt="product.name" 
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
             >
-            <div class="absolute top-2 right-2 bg-brand-pink text-brand-dark text-xs font-bold px-2 py-1 rounded-md shadow-sm" v-if="product.isNew">
+            <div class="absolute top-1 right-1 md:top-2 md:right-2 bg-brand-pink text-brand-dark text-[10px] md:text-xs font-bold px-1.5 py-0.5 md:px-2 md:py-1 rounded-md shadow-sm" v-if="product.isNew">
               NEW
             </div>
           </div>
 
-          <div class="space-y-2">
-            <h3 class="text-xl font-bold text-brand-dark font-serif group-hover:text-brand-gold transition-colors">
+          <div class="space-y-1 md:space-y-2">
+            <h3 class="text-sm md:text-xl font-bold text-brand-dark font-serif group-hover:text-brand-gold transition-colors leading-tight line-clamp-1 md:line-clamp-none">
               {{ product.name }}
             </h3>
-            <p class="text-gray-400 text-sm font-sans line-clamp-2">{{ product.description }}</p>
             
-            <div class="pt-2 border-t border-gray-100 mt-2">
-              <span class="text-lg font-bold text-gray-800 font-sans block text-right">
+            <p class="text-gray-400 text-[10px] md:text-sm font-sans line-clamp-1 md:line-clamp-2">
+              {{ product.description }}
+            </p>
+            
+            <div class="pt-2 border-t border-gray-100 mt-1 md:mt-2">
+              <span class="text-sm md:text-lg font-bold text-gray-800 font-sans block text-right">
                 Rp {{ product.price.toLocaleString('id-ID') }}
               </span>
             </div>
@@ -77,7 +80,7 @@ const categories = [
   { id: 'all', name: 'Semua' },
   { id: 'bread', name: 'Roti' },
   { id: 'cakes', name: 'Kue' },
-  { id: 'dessert', name: 'Makanan Manis' }
+  { id: 'dessert', name: 'Camilan' }
 ];
 
 const activeCategory = ref('bread');

@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="product-detail-page pt-20">
+  <div class="product-detail-page">
     <ProductDetail />
     <RelatedProducts />
   </div>
