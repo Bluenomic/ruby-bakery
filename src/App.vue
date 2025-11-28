@@ -6,7 +6,7 @@ import Footer from '@/components/Footer.vue';
 <template>
   <div class="min-h-screen flex flex-col">
     <Navbar />
-      <main class="flex-grow">
+      <main class="grow">
         <router-view v-slot="{ Component }">
           <transition name="page" mode="out-in">
             <component :is="Component" />
