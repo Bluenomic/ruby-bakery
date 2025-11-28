@@ -15,9 +15,6 @@
           </p>
           <div class="flex space-x-4">
             <a href="#" class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center text-brand-dark hover:bg-brand-gold hover:text-white transition-all shadow-sm shrink-0">
-                <i data-lucide="instagram" class="w-5 h-5"></i>
-            </a>
-            <a href="#" class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center text-brand-dark hover:bg-brand-gold hover:text-white transition-all shadow-sm shrink-0">
                 <i data-lucide="facebook" class="w-5 h-5"></i>
             </a>
             <a href="#" class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center text-brand-dark hover:bg-brand-gold hover:text-white transition-all shadow-sm shrink-0">

@@ -22,10 +22,10 @@
 </template>
 
 <script setup>
-import keju from '@/assets/products/Roti Keju.jpg';
-import sosis from '@/assets/products/Roti Sosis.jpg';
-import donut from '@/assets/products/Donut.jpg';
-import coffee from '@/assets/products/Roti Kopi.jpg';
+import keju from '@/assets/Products/Roti Keju.jpg';
+import sosis from '@/assets/Products/Roti Sosis.jpg';
+import donut from '@/assets/Products/Donut.jpg';
+import coffee from '@/assets/Products/Roti Kopi.jpg';
 
 const related = [
   { id: 2, name: 'Roti Keju', price: 3000, image: keju },
