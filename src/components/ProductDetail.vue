@@ -58,7 +58,7 @@
 
 <script setup>
 import { ref, computed, onMounted, onUpdated } from 'vue';
-import cokelat from '@/assets/products/Roti Cokelat.jpg';
+import cokelat from '@/assets/Products/Roti Cokelat.jpg';
 
 const product = {
   id: 1,

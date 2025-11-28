@@ -63,15 +63,15 @@
 
 <script setup>
 import { ref, computed, onMounted, onUpdated } from 'vue';
-import sosis from '@/assets/products/Roti Sosis.jpg';
-import cokelat from '@/assets/products/Roti Cokelat.jpg';
-import keju from '@/assets/products/Roti Keju.jpg';
-import serikaya from '@/assets/products/Roti Serikaya.jpg';
-import kopi from '@/assets/products/Roti Kopi.jpg';
-import smallcake from '@/assets/products/Small Cake.jpg';
-import bigcake from '@/assets/products/Big Cake.jpg';
-import kuesus from '@/assets/products/Kue Sus.jpg';
-import fruitpie from '@/assets/products/Fruit Pie.jpg';
+import sosis from '@/assets/Products/Roti Sosis.jpg';
+import cokelat from '@/assets/Products/Roti Cokelat.jpg';
+import keju from '@/assets/Products/Roti Keju.jpg';
+import serikaya from '@/assets/Products/Roti Serikaya.jpg';
+import kopi from '@/assets/Products/Roti Kopi.jpg';
+import smallcake from '@/assets/Products/Small Cake.jpg';
+import bigcake from '@/assets/Products/Big Cake.jpg';
+import kuesus from '@/assets/Products/Kue Sus.jpg';
+import fruitpie from '@/assets/Products/Fruit Pie.jpg';
 
 const categories = [
   { id: 'all', name: 'Semua' },
