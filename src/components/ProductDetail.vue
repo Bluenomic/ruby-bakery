@@ -15,7 +15,7 @@
         <div class="flex flex-col-reverse md:flex-row gap-4 md:gap-6">
           <div class="flex md:flex-col gap-3 md:gap-4 overflow-x-auto md:overflow-visible pb-2 md:pb-0 scrollbar-hide">
             <button 
-              v-for="(img, index) in product.images" 
+              v-for="(img, index) in images" 
               :key="index"
               @click="activeImage = img"
               class="w-16 h-16 md:w-24 md:h-24 rounded-lg md:rounded-xl overflow-hidden border-2 transition-all duration-300 shrink-0"
@@ -43,8 +43,8 @@
 
           <div class="prose prose-sm md:prose-lg text-gray-500 font-sans leading-relaxed">
             <p>{{ product.description }}</p>
-            <p class="mt-4">
-              Rasa favorit kami. Roti cokelat ini adalah kegembiraan bagi semua orang. Cokelat manis yang ada di dalam roti menyebar di mulut, menciptakan rasa sensasional yang membuat Anda ingin lagi.
+             <p class="mt-4">
+              {{ product.longDescription }}
             </p>
           </div>
 
@@ -75,14 +75,19 @@ const props = defineProps({
   }
 });
 
-const activeImage = ref(props.product.images[0]);
+const images = computed(() => {
+  return [props.product.image];
+});
 
-watch(() => props.product.images, (newProduct) => {
-  activeImage.value = newProduct.images[0];
+const activeImage = ref(images.value[0]);
+
+watch(() => props.product, (newProduct) => {
+  const newImages = [newProduct.image];
+  activeImage.value = newImages[0];
 });
 
 const whatsappLink = computed(() => {
-  const message = `Hi, aku tertarik dengan ${product.name}!`;
+  const message = `Hi, aku tertarik dengan ${props.product.name}!`;
   return `https://wa.me/6281350916858?text=${encodeURIComponent(message)}`;
 });
 
