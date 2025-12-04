@@ -66,23 +66,20 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUpdated } from 'vue';
-import cokelat from '@/assets/Products/Roti Cokelat.jpg';
+import { ref, computed, onMounted, onUpdated, watch } from 'vue';
 
-const product = {
-  id: 1,
-  name: 'Cokelat',
-  price: 3000,
-  description: 'Roti lembut dan fluffy yang diisi dengan cokelat kaya dan creamy. Dipanggang dengan sempurna hingga keemasan.',
-  images: [
-    cokelat,
-    cokelat,
-    cokelat,
-    cokelat,
-  ]
-};
+const props = defineProps({
+  product: {
+    type: Object,
+    required: true
+  }
+});
 
-const activeImage = ref(product.images[0]);
+const activeImage = ref(props.product.images[0]);
+
+watch(() => props.product.images, (newProduct) => {
+  activeImage.value = newProduct.images[0];
+});
 
 const whatsappLink = computed(() => {
   const message = `Hi, aku tertarik dengan ${product.name}!`;

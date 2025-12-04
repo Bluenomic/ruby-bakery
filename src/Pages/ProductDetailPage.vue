@@ -1,10 +1,16 @@
 <script setup>
-import { onMounted, watch } from 'vue';
+import { onMounted, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
+import { products } from '@/data/product.js';
 import ProductDetail from '@/components/ProductDetail.vue';
 import RelatedProducts from '@/components/RelatedProducts.vue';
 
 const route = useRoute();
+
+const currentProduct = computed(() => {
+  const id = Number(route.params.id); 
+  return products.find(p => p.id === id);
+});
 
 watch(() => route.params.id, () => {
   setTimeout(() => {
@@ -21,7 +27,7 @@ onMounted(() => {
 
 <template>
   <div class="product-detail-page">
-    <ProductDetail />
+    <ProductDetail v-if="currentProduct" :product="currentProduct"/>
     <RelatedProducts />
   </div>
 </template>
