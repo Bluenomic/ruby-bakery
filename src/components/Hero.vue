@@ -15,7 +15,7 @@
             Nikmati kelezatan roti dan kue buatan tangan yang segar setiap hari, dibuat dengan bahan berkualitas tinggi dan cinta untuk setiap gigitan.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2 md:pt-4">
-            <router-link to="/products" class="px-8 py-3 md:px-12 md:py-5 rounded-lg bg-brand-dark text-white hover:bg-brand-gold transition-all font-bold tracking-wide text-center shadow-lg transform hover:-translate-y-1 text-base md:text-lg">
+            <router-link to="/products" class="px-8 py-3 md:px-12 md:py-5 rounded-lg bg-brand-dark text-white hover:bg-brand-gold transition-all font-bold tracking-widest uppercase text-center shadow-lg transform hover:-translate-y-1 text-base md:text-lg">
               Lihat Menu
             </router-link>
           </div>

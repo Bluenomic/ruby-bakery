@@ -24,7 +24,7 @@
       </div>
       
       <div class="text-center mt-10 md:mt-16">
-        <router-link to="/products" class="inline-flex items-center gap-3 text-brand-dark font-bold hover:text-brand-gold transition border-b-2 border-brand-dark hover:border-brand-gold pb-1 text-base md:text-lg">
+        <router-link to="/products" class="inline-flex items-center gap-3 text-brand-dark font-bold uppercase tracking-widest hover:text-brand-gold transition border-b-2 border-brand-dark hover:border-brand-gold pb-1 text-base md:text-lg">
           Lihat Semua Menu <i data-lucide="arrow-right" class="w-5 h-5"></i>
         </router-link>
       </div>

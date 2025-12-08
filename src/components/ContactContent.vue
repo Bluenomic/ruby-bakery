@@ -73,7 +73,7 @@
               class="inline-flex items-center gap-2 md:gap-3 px-8 py-3 md:px-10 md:py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-widest text-xs md:text-sm"
             >
               <i data-lucide="message-circle" class="w-4 h-4 md:w-5 md:h-5"></i>
-              Chat on WhatsApp
+              Chat via WhatsApp
             </a>
           </div>
         </div>

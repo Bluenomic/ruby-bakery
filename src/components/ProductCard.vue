@@ -18,8 +18,8 @@ defineProps({
         :alt="product.name" 
         class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
       >
-      <div class="absolute top-1 right-1 md:top-2 md:right-2 bg-brand-pink text-brand-dark text-[10px] md:text-xs font-bold px-1.5 py-0.5 md:px-2 md:py-1 rounded-md shadow-sm" v-if="product.isNew">
-        NEW
+      <div class="absolute top-1 right-1 md:top-2 md:right-2 bg-brand-pink text-brand-dark text-[10px] md:text-xs font-bold uppercase px-1.5 py-0.5 md:px-2 md:py-1 rounded-md shadow-sm" v-if="product.isNew">
+        New
       </div>
     </div>
 

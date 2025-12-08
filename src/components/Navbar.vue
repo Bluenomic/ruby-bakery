@@ -21,7 +21,7 @@
             {{ item.name }}
           </router-link>
           
-          <router-link to="/contact" class="px-6 py-2 rounded-full bg-brand-dark text-white text-sm font-bold hover:bg-brand-gold transition shadow-md transform hover:-translate-y-0.5">
+          <router-link to="/contact" class="px-6 py-2 rounded-full bg-brand-dark text-white text-sm font-bold uppercase tracking-widest hover:bg-brand-gold transition shadow-md transform hover:-translate-y-0.5">
             Hubungi Kami
           </router-link>
         </div>
@@ -48,7 +48,7 @@
           <router-link 
             v-for="item in menuItems" :key="item.path" :to="item.path" 
             @click="isOpen = false"
-            class="block px-4 py-3 text-base font-bold text-gray-600 rounded-xl hover:bg-brand-pink/20 active:bg-brand-pink/30 transition"
+            class="block px-4 py-3 text-base font-bold uppercase tracking-widest text-gray-600 rounded-xl hover:bg-brand-pink/20 active:bg-brand-pink/30 transition"
             active-class="text-brand-dark bg-brand-pink/30"
           >
             {{ item.name }}
@@ -56,7 +56,7 @@
           <router-link 
             to="/contact"
             @click="isOpen = false"
-             class="block px-4 py-3 text-base font-bold text-white bg-brand-dark rounded-xl hover:bg-brand-gold transition text-center mt-4"
+             class="block px-4 py-3 text-base font-bold uppercase tracking-widest text-white bg-brand-dark rounded-xl hover:bg-brand-gold transition text-center mt-4"
           >
             Hubungi Kami
           </router-link>

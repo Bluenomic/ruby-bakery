@@ -27,7 +27,7 @@
           
           <div class="flex-1 aspect-square md:aspect-auto md:h-[500px] bg-gray-50 rounded-2xl md:rounded-3xl overflow-hidden shadow-lg relative group">
             <img :src="activeImage" :alt="product.name" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-            <div class="absolute top-3 right-3 md:top-4 md:right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold text-brand-dark shadow-sm">
+            <div class="absolute top-3 right-3 md:top-4 md:right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold text-brand-dark shadow-sm uppercase tracking-wider">
               Best Seller
             </div>
           </div>
@@ -52,7 +52,7 @@
             <a 
               :href="whatsappLink" 
               target="_blank"
-              class="w-full md:w-auto flex-1 bg-brand-gold hover:bg-brand-goldHover text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center uppercase tracking-widest flex items-center justify-center gap-2 md:gap-3 text-sm md:text-base"
+              class="w-full md:w-auto flex-1 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center uppercase tracking-widest flex items-center justify-center gap-2 md:gap-3 text-sm md:text-base"
             >
               <i data-lucide="message-circle" class="w-5 h-5"></i>
               Pesan via WhatsApp
@@ -87,7 +87,7 @@ watch(() => props.product, (newProduct) => {
 });
 
 const whatsappLink = computed(() => {
-  const message = `Hi, aku tertarik dengan ${props.product.name}!`;
+  const message = `Halo, saya tertarik dengan ${props.product.name}!`;
   return `https://wa.me/6281350916858?text=${encodeURIComponent(message)}`;
 });
 

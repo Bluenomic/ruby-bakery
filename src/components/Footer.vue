@@ -24,7 +24,7 @@
         </div>
 
         <div class="text-center md:text-left">
-          <h3 class="font-bold text-brand-dark text-lg md:text-xl mb-4 md:mb-8 font-serif">Quick Links</h3>
+          <h3 class="font-bold text-brand-dark text-lg md:text-xl mb-4 md:mb-8 font-serif">Navigasi</h3>
           <ul class="space-y-3 md:space-y-4 text-sm md:text-base flex flex-col items-center md:items-start">
             <li><router-link to="/" class="text-gray-500 hover:text-brand-gold transition-colors">Beranda</router-link></li>
             <li><router-link to="/products" class="text-gray-500 hover:text-brand-gold transition-colors">Produk</router-link></li>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="text-center md:text-left">
-          <h3 class="font-bold text-brand-dark text-lg md:text-xl mb-4 md:mb-8 font-serif">Visit Us</h3>
+          <h3 class="font-bold text-brand-dark text-lg md:text-xl mb-4 md:mb-8 font-serif">Kunjungi Kami</h3>
           <ul class="space-y-4 md:space-y-5 text-sm md:text-base text-gray-500 flex flex-col items-center md:items-start">
             <li class="flex items-start gap-3 md:gap-4 justify-center md:justify-start text-center md:text-left">
                 <i data-lucide="map-pin" class="w-5 h-5 text-brand-gold mt-0.5 shrink-0"></i>
