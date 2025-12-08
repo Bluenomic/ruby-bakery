@@ -28,6 +28,6 @@ onMounted(() => {
 <template>
   <div class="product-detail-page">
     <ProductDetail v-if="currentProduct" :product="currentProduct"/>
-    <RelatedProducts />
+    <RelatedProducts v-if="currentProduct" :currentProduct="currentProduct" />
   </div>
 </template>

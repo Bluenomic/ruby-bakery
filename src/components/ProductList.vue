@@ -56,7 +56,7 @@ const categories = [
   { id: 'dessert', name: 'Camilan' }
 ];
 
-const activeCategory = ref('bread');
+const activeCategory = ref('all');
 
 const products = [
   // Roti
