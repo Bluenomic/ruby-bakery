@@ -28,20 +28,24 @@
 
         <div class="mobile-menu-btn ml-auto">
           <button @click="isOpen = !isOpen" class="text-brand-dark p-2 focus:outline-none active:bg-brand-pink/20 rounded-lg transition cursor-pointer">
-            <i :data-lucide="isOpen ? 'x' : 'menu'" class="w-7 h-7 md:w-8 md:h-8"></i>
+            <span v-if="!isOpen">
+              <i data-lucide="menu" class="w-7 h-7 md:w-8 md:h-8"></i>
+            </span>
+            <span v-else>
+              <i data-lucide="x" class="w-7 h-7 md:w-8 md:h-8"></i>
+            </span>          
           </button>
         </div>
-
       </div>
     </div>
 
     <transition 
       enter-active-class="transition duration-200 ease-out" 
-      enter-from-class="transform -translate-y-4 opacity-0" 
+      enter-from-class="transform -translate-y-20 opacity-0" 
       enter-to-class="transform translate-y-0 opacity-100" 
       leave-active-class="transition duration-150 ease-in" 
       leave-from-class="transform translate-y-0 opacity-100" 
-      leave-to-class="transform -translate-y-4 opacity-0"
+      leave-to-class="transform -translate-y-20 opacity-0"
     >
       <div v-if="isOpen" class="md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 z-40">
         <div class="px-6 pt-4 pb-8 space-y-3">

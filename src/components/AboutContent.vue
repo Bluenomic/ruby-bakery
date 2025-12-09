@@ -2,7 +2,7 @@
   <section class="py-12 md:py-24 px-4 bg-white">
     <div class="max-w-7xl mx-auto">
       
-      <div class="flex flex-col md:flex-row justify-between md:items-center gap-6 md:gap-8 mb-12 md:mb-20 border-b border-gray-100 pb-8 md:pb-12">
+      <div class="flex flex-col md:flex-row justify-between items-center md:items-center gap-6 md:gap-8 mb-12 md:mb-20 border-b border-gray-100 pb-8 md:pb-12">
         <div class="max-w-2xl text-center md:text-left">
           <h2 class="text-3xl md:text-5xl font-bold text-brand-dark mb-4 md:mb-6 font-serif">Tentang Kami</h2>
           <p class="text-base md:text-xl text-gray-500 font-sans leading-relaxed">
@@ -12,9 +12,10 @@
         </div>
         <router-link 
           to="/contact" 
-          class="px-6 py-3 md:px-8 md:py-4 bg-brand-gold text-white font-bold tracking-widest uppercase rounded-3xl shadow-lg hover:bg-brand-goldHover hover:-translate-y-1 transition-all duration-300 shrink-0 text-sm md:text-base"
+          class="inline-flex gap-2 px-6 py-3 md:px-8 md:py-4 bg-[#25D366] text-white font-bold tracking-widest uppercase rounded-3xl shadow-lg hover:bg-[#20bd5a] hover:-translate-y-1 transition-all duration-300 shrink-0 text-sm md:text-base"
         >
-          Hubungi Kami
+          <i data-lucide="message-circle" class="w-4 h-4 md:w-5 md:h-5"></i>
+          Hubungi Kami via WhatsApp
         </router-link>
       </div>
 
@@ -37,10 +38,10 @@
             <img src="@/assets/Heroes.jpg" alt="Our Stall" class="w-full h-48 md:h-64 object-cover">
           </div>
           <div class="grid grid-cols-2 gap-4 md:gap-6">
-            <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500 mt-4 md:mt-8">
+            <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500 md:mt-8">
               <img src="@/assets/HomePage/clients/Sandiaga.jpg" alt="Event 1" class="w-full h-32 md:h-48 object-cover">
             </div>
-            <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500 mb-4 md:mb-8">
+            <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500 md:mb-8">
               <img src="@/assets/HomePage/clients/Basuki.jpg" alt="Event 2" class="w-full h-32 md:h-48 object-cover">
             </div>
           </div>

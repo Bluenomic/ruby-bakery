@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h-[30vh] md:h-[40vh] min-h-[200px] md:min-h-[300px] flex items-center justify-center overflow-hidden">
+  <section class="relative h-[20vh] md:h-[40vh] min-h-[200px] md:min-h-[300px] flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img 
         src="@/assets/HomePage/HeroBG.jpg" 
