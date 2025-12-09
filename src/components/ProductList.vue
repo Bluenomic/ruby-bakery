@@ -39,15 +39,7 @@
 <script setup>
 import ProductCard from './ProductCard.vue';
 import { ref, computed, onMounted, onUpdated } from 'vue';
-import sosis from '@/assets/Products/Roti Sosis.jpg';
-import cokelat from '@/assets/Products/Roti Cokelat.jpg';
-import keju from '@/assets/Products/Roti Keju.jpg';
-import serikaya from '@/assets/Products/Roti Serikaya.jpg';
-import kopi from '@/assets/Products/Roti Kopi.jpg';
-import smallcake from '@/assets/Products/Small Cake.jpg';
-import bigcake from '@/assets/Products/Big Cake.jpg';
-import kuesus from '@/assets/Products/Kue Sus.jpg';
-import fruitpie from '@/assets/Products/Fruit Pie.jpg';
+import { products } from '@/data/product.js';
 
 const categories = [
   { id: 'all', name: 'Semua' },
@@ -57,23 +49,6 @@ const categories = [
 ];
 
 const activeCategory = ref('all');
-
-const products = [
-  // Roti
-  { id: 1, name: 'Sosis', category: 'bread', price: 3000, description: 'Potongan Sosis', image: sosis, isNew: false },
-  { id: 2, name: 'Cokelat', category: 'bread', price: 3000, description: 'Selai Cokelat', image: cokelat, isNew: false },
-  { id: 3, name: 'Keju', category: 'bread', price: 3000, description: 'Keju Parut', image: keju, isNew: false },
-  { id: 4, name: 'Serikaya', category: 'bread', price: 3000, description: 'Selai Serikaya', image: serikaya, isNew: false },
-  { id: 5, name: 'Roti Kopi', category: 'bread', price: 6000, description: 'Bubuk Kopi', image: kopi, isNew: false },
-  
-  // Kue
-  { id: 6, name: 'Kue Kecil', category: 'cakes', price: 70000, description: 'Ulang Tahun, Hadiah, dll.', image: smallcake, isNew: true },
-  { id: 7, name: 'Kue Besar', category: 'cakes', price: 120000, description: 'Anniversary, Pernikahan, dll.', image: bigcake, isNew: false },
-  
-  // Dessert
-  { id: 8, name: 'Kue Sus', category: 'dessert', price: 3000, description: 'Susu', image: kuesus, isNew: false },
-  { id: 9, name: 'Pie Buah', category: 'dessert', price: 3000, description: 'Buah-buahan', image: fruitpie, isNew: true },
-];
 
 const filteredProducts = computed(() => {
   if (activeCategory.value === 'all') return products;
