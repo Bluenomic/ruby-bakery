@@ -27,7 +27,7 @@
         </div>
 
         <div class="mobile-menu-btn ml-auto">
-          <button @click="isOpen = !isOpen" class="text-brand-dark p-2 focus:outline-none active:bg-brand-pink/20 rounded-lg transition cursor-pointer">
+          <button @click="isOpen = !isOpen" class="text-brand-dark p-2 focus:outline-none font-bold active:bg-brand-pink/20 rounded-lg transition cursor-pointer">
             <span v-if="!isOpen">
               <i data-lucide="menu" class="w-7 h-7 md:w-8 md:h-8"></i>
             </span>
