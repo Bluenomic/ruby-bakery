@@ -6,22 +6,13 @@
       </h2>
 
       <div class="flex md:grid md:grid-cols-4 gap-4 md:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
-        <router-link 
+        <div 
           v-for="item in related" 
           :key="item.id" 
-          :to="'/products/' + item.id"
-          class="min-w-40 w-[45%] md:w-auto snap-center shrink-0 bg-white p-3 md:p-4 rounded-xl md:rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 block"
+          class="min-w-40 w-[45%] md:w-auto snap-center shrink-0"
         >
-          <div class="aspect-square rounded-lg md:rounded-xl overflow-hidden bg-gray-100 mb-3 md:mb-4">
-            <img :src="item.image" :alt="item.name" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-          </div>
-          <h3 class="font-bold text-brand-dark font-serif text-sm md:text-lg mb-1 group-hover:text-brand-gold transition-colors truncate">
-            {{ item.name }}
-          </h3>
-          <p class="text-gray-500 font-bold text-xs md:text-sm">
-            Rp {{ item.price.toLocaleString('id-ID') }}
-          </p>
-        </router-link>
+          <ProductCard :product="item" />
+        </div>
       </div>
     </div>
   </section>
@@ -30,6 +21,7 @@
 <script setup>
 import { computed } from 'vue';
 import { products } from '@/data/product.js';
+import ProductCard from './ProductCard.vue';
 
 const props = defineProps({
   currentProduct: {
