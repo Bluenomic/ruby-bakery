@@ -12,10 +12,10 @@
         </div>
         <router-link 
           to="/contact" 
-          class="inline-flex gap-2 px-6 py-3 md:px-8 md:py-4 bg-[#25D366] text-white font-bold tracking-widest uppercase rounded-3xl shadow-lg hover:bg-[#20bd5a] hover:-translate-y-1 transition-all duration-300 shrink-0 text-sm md:text-base"
+          class="inline-flex gap-2 px-6 py-3 md:px-8 md:py-4 bg-brand-gold text-white font-bold tracking-widest uppercase rounded-3xl shadow-lg hover:bg-brand-goldHover hover:-translate-y-1 transition-all duration-300 shrink-0 text-sm md:text-base"
         >
           <i data-lucide="message-circle" class="w-4 h-4 md:w-5 md:h-5"></i>
-          Hubungi Kami via WhatsApp
+          Hubungi Kami
         </router-link>
       </div>
 
