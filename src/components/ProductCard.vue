@@ -24,7 +24,7 @@ defineProps({
     </div>
 
     <div class="space-y-1 md:space-y-2">
-      <h3 class="text-sm md:text-xl font-bold text-brand-dark font-serif group-hover:text-brand-gold transition-colors leading-tight line-clamp-1 md:line-clamp-none">
+      <h3 class="text-sm md:text-xl font-bold text-brand-dark font-serif group-hover:text-brand-gold transition-colors">
         {{ product.name }}
       </h3>
       

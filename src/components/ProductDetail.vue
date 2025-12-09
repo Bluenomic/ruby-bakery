@@ -27,7 +27,7 @@
           
           <div class="flex-1 aspect-square md:aspect-auto md:h-[500px] bg-gray-50 rounded-2xl md:rounded-3xl overflow-hidden shadow-lg relative group">
             <img :src="activeImage" :alt="product.name" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-            <div class="absolute top-3 right-3 md:top-4 md:right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold text-brand-dark shadow-sm uppercase tracking-wider">
+            <div class="absolute top-3 right-3 md:top-4 md:right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold text-brand-dark shadow-sm uppercase tracking-wider" v-if="product.isBestSeller">
               Best Seller
             </div>
           </div>
@@ -58,7 +58,6 @@
               Pesan via WhatsApp
             </a>
           </div>
-
         </div>
       </div>
     </div>
@@ -76,13 +75,17 @@ const props = defineProps({
 });
 
 const images = computed(() => {
+  if (props.product.images && props.product.images.length > 0) {
+    return props.product.images;
+  }
   return [props.product.image];
 });
 
 const activeImage = ref(images.value[0]);
 
 watch(() => props.product, (newProduct) => {
-  const newImages = [newProduct.image];
+  const newImages = newProduct.images && newProduct.images.length > 0
+    ? newProduct.images : [newProduct.image];
   activeImage.value = newImages[0];
 });
 

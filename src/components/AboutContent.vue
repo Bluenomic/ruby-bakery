@@ -2,7 +2,7 @@
   <section class="py-12 md:py-24 px-4 bg-white">
     <div class="max-w-7xl mx-auto">
       
-      <div class="flex flex-col md:flex-row justify-between items-center md:items-end gap-6 md:gap-8 mb-12 md:mb-20 border-b border-gray-100 pb-8 md:pb-12">
+      <div class="flex flex-col md:flex-row justify-between md:items-center gap-6 md:gap-8 mb-12 md:mb-20 border-b border-gray-100 pb-8 md:pb-12">
         <div class="max-w-2xl text-center md:text-left">
           <h2 class="text-3xl md:text-5xl font-bold text-brand-dark mb-4 md:mb-6 font-serif">Tentang Kami</h2>
           <p class="text-base md:text-xl text-gray-500 font-sans leading-relaxed">
@@ -12,7 +12,7 @@
         </div>
         <router-link 
           to="/contact" 
-          class="px-6 py-3 md:px-8 md:py-4 bg-brand-gold text-white font-bold tracking-widest uppercase rounded-lg shadow-lg hover:bg-brand-goldHover hover:-translate-y-1 transition-all duration-300 shrink-0 text-sm md:text-base"
+          class="px-6 py-3 md:px-8 md:py-4 bg-brand-gold text-white font-bold tracking-widest uppercase rounded-3xl shadow-lg hover:bg-brand-goldHover hover:-translate-y-1 transition-all duration-300 shrink-0 text-sm md:text-base"
         >
           Hubungi Kami
         </router-link>

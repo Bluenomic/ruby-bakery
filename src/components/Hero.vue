@@ -14,18 +14,17 @@
           <p class="text-base md:text-lg text-gray-600 max-w-xl mx-auto md:mx-0 leading-relaxed">
             Nikmati kelezatan roti dan kue buatan tangan yang segar setiap hari, dibuat dengan bahan berkualitas tinggi dan cinta untuk setiap gigitan.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2 md:pt-4">
-            <router-link to="/products" class="px-8 py-3 md:px-12 md:py-5 rounded-lg bg-brand-dark text-white hover:bg-brand-gold transition-all font-bold tracking-widest uppercase text-center shadow-lg transform hover:-translate-y-1 text-base md:text-lg">
+          <div class="flex gap-4 justify-center md:justify-start pt-2 md:pt-4">
+            <router-link to="/products" class="px-8 py-3 md:px-12 md:py-5 rounded-3xl bg-brand-dark text-white hover:bg-brand-gold transition-all font-bold tracking-widest uppercase text-center shadow-lg transform hover:-translate-y-1 text-base md:text-lg">
               Lihat Menu
             </router-link>
           </div>
         </div>
 
         <div class="order-1 md:order-2 relative">
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-white rounded-full blur-3xl opacity-60 -z-10"></div>
           <div class="relative grid grid-cols-2 gap-3 md:gap-6">
-            <img src="@/assets/Heroes.jpg" alt="Bread" class="rounded-2xl md:rounded-3xl shadow-2xl w-full h-40 md:h-96 object-cover transform translate-y-6 md:translate-y-12 hover:scale-105 transition duration-500">
-            <img src="@/assets/HomePage/HeroBG.jpg" alt="Cake" class="rounded-2xl md:rounded-3xl shadow-2xl w-full h-40 md:h-96 object-cover transform -translate-y-4 md:-translate-y-8 hover:scale-105 transition duration-500">
+            <img src="@/assets/Heroes.jpg" alt="Bread" class="rounded-2xl md:rounded-3xl shadow-2xl w-full h-50 md:h-96 object-cover transform translate-y-6 md:translate-y-12 hover:scale-105 transition duration-500">
+            <img src="@/assets/HomePage/HeroBG.jpg" alt="Cake" class="rounded-2xl md:rounded-3xl shadow-2xl w-full h-50 md:h-96 object-cover transform -translate-y-4 md:-translate-y-8 hover:scale-105 transition duration-500">
           </div>
         </div>
       </div>
