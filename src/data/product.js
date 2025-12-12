@@ -59,4 +59,23 @@ export const products = [
     longDescription: 'Pie buah yang segar dan lezat, diisi dengan campuran buah-buahan pilihan. Cocok sebagai camilan atau hidangan penutup.',
     image: fruitpie, images : [fruitpie, fruitpie, fruitpie], isNew: true, tags: ['manis', 'buah', 'segar'], isBestSeller: false
     },
+
+    // Skills
+    { id: 10, name: 'Web Development', category: 'skills', price: 1000000, 
+    description: 'Skill untuk membangun laman web', 
+    longDescription: 'Dapat membangun sebuah aplikasi web multi-halaman.',
+    image: fruitpie, images : [fruitpie, fruitpie, fruitpie], isNew: true, tags: ['skill', 'web', 'school'], isBestSeller: true
+    },
+    { id: 11, name: 'Database Management', category: 'skills', price: 1000000, 
+    description: 'Skill manajemen database', 
+    longDescription: 'Dapat membuat struktur database.',
+    image: fruitpie, images : [fruitpie, fruitpie, fruitpie], isNew: true, tags: ['skill', 'web', 'school'], isBestSeller: true
+    },
+    { id: 12, name: 'Image Processing', category: 'skills', price: 1000000, 
+    description: 'Skill memproses citra digital', 
+    longDescription: 'Dapat memproses citra digital.',
+    image: fruitpie, images : [fruitpie, fruitpie, fruitpie], isNew: true, tags: ['skill', 'web', 'school'], isBestSeller: true
+    },
+
+
 ]

@@ -4,6 +4,7 @@ import ProductsPage from "@/Pages/ProductsPage.vue";
 import AboutPage from "@/Pages/AboutPage.vue";
 import ContactPage from "@/Pages/ContactPage.vue";
 import ProductDetailPage from "@/Pages/ProductDetailPage.vue";
+import AboutMePage from "@/Pages/AboutMePage.vue";
 
 const routes = [
     {
@@ -30,6 +31,11 @@ const routes = [
         path : "/products/:id",
         name : "ProductDetail",
         component : ProductDetailPage,
+    },
+    {
+        path : "/aboutme",
+        name : "AboutMe",
+        component : AboutMePage,
     }
 ];
 

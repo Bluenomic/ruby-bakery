@@ -78,6 +78,7 @@ const menuItems = [
   { name: 'Beranda', path: '/' },
   { name: 'Produk', path: '/products' },
   { name: 'Tentang', path: '/about' },
+  { name: 'About Me', path: '/aboutme'}
 ];
 
 const refreshIcons = () => { if (window.lucide) window.lucide.createIcons(); }
